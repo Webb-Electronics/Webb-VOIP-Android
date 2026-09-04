@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Webb VOIP</string>
+    <string name="registration">Register</string>
+    <string name="dial">Dial</string>
+    <string name="message">Message</string>
+    <string name="contact">Contacts</string>
+    <string name="call_history">History</string>
+</resources>

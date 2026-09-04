@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+# Deployment configuration (template)
+#
+# Copy this file to `deployment.properties` and fill in the values for your
+# own deployment. `deployment.properties` is git-ignored on purpose: it holds
+# site-specific infrastructure details that must not be published alongside
+# the source.
+#
+#     cp deployment.properties.example deployment.properties
+#
+# Every key is optional. Leave a key blank and the corresponding feature is
+# simply disabled -- the app still builds and runs, and users can register
+# against any SIP server by hand from the Register screen.
+# ---------------------------------------------------------------------------
+
+# Aliases that rewrite a SIP server address into its canonical domain, so an
+# account reached over the LAN and the same account reached from the internet
+# are treated as one identity.
+#
+# Format: comma-separated `address=canonicalDomain` pairs.
+# Example: webb.domainAliases=10.0.0.1=pbx.example.com,203.0.113.10=pbx.example.com
+webb.domainAliases=
+
+# Per-domain STUN configuration. A domain listed here gets ICE and STUN
+# enabled with the given STUN server; domains not listed use no NAT policy.
+#
+# Format: comma-separated `domain=stunServer` pairs.
+# Example: webb.natStunPolicies=pbx.example.com=stun.l.google.com
+webb.natStunPolicies=
